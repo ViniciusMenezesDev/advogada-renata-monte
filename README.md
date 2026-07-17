@@ -4,7 +4,6 @@ Landing page única e responsiva, feita com HTML/CSS/JS puro + Bootstrap 5 (via 
 
 ## Antes de publicar — substituir os placeholders
 
-- **Foto real**: no `index.html`, a seção Hero (`<div class="avatar-placeholder">`) usa um monograma "RM" como espaço reservado. Troque por uma foto profissional real (ex: `<img>` dentro do card, ajustando o CSS `.avatar-placeholder` conforme necessário).
 - **Dados da bio** (seção "Sobre" em `index.html`): preencher `[UF, nº OAB]`, `[Instituição de ensino]` e `[ano de formação]`.
 - **Depoimentos** (seção "Depoimentos"): são todos de exemplo — substituir pelos depoimentos reais de clientes, com autorização deles para uso público.
 
