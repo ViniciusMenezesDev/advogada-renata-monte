@@ -140,15 +140,6 @@ h1, h2, h3, .navbar-brand {
   opacity: 0.6;
 }
 
-/* Placeholders de conteúdo */
-.placeholder-tag {
-  background-color: var(--color-bg-soft);
-  color: var(--color-primary-dark);
-  padding: 0.1rem 0.4rem;
-  border-radius: 0.3rem;
-  font-weight: 600;
-}
-
 /* FAQ */
 .accordion-button:not(.collapsed) {
   background-color: var(--color-bg-soft);
