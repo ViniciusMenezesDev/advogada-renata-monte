@@ -1,0 +1,9 @@
+services:
+  site:
+    image: nginx:alpine
+    container_name: renata-monte-site
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    restart: unless-stopped
