@@ -126,20 +126,6 @@ h1, h2, h3, .navbar-brand {
   color: var(--color-primary);
 }
 
-/* Testimonials */
-.testimonial-card {
-  border: none;
-  border-radius: 1rem;
-  background-color: var(--color-white);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-}
-
-.quote-icon {
-  font-size: 1.75rem;
-  color: var(--color-primary);
-  opacity: 0.6;
-}
-
 /* FAQ */
 .accordion-button:not(.collapsed) {
   background-color: var(--color-bg-soft);
