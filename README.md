@@ -2,11 +2,6 @@
 
 Landing page única e responsiva, feita com HTML/CSS/JS puro + Bootstrap 5 (via CDN), para publicação no GitHub Pages com domínio próprio `renatamonte.com.br`.
 
-## Antes de publicar — substituir os placeholders
-
-- **Dados da bio** (seção "Sobre" em `index.html`): preencher `[UF, nº OAB]`, `[Instituição de ensino]` e `[ano de formação]`.
-- **Depoimentos** (seção "Depoimentos"): são todos de exemplo — substituir pelos depoimentos reais de clientes, com autorização deles para uso público.
-
 ## Como publicar no GitHub Pages com domínio próprio
 
 1. Suba este conteúdo para um repositório no GitHub (branch `main`).
