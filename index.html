@@ -35,7 +35,9 @@
 
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Attorney">
+<meta itemprop="url" content="https://renatamonte.com.br">
+<meta itemprop="areaServed" content="BR">
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
@@ -66,7 +68,7 @@
     <div class="row align-items-center gy-5">
       <div class="col-lg-7 text-center text-lg-start">
         <p class="eyebrow">Advocacia especializada</p>
-        <h1 class="display-4 fw-bold">Renata Monte</h1>
+        <h1 class="display-4 fw-bold" itemprop="name">Renata Monte</h1>
         <p class="lead">
           Advogada dedicada a proteger o que importa para você: sua marca e seu patrimônio.
           Atuação em <strong>Direito Imobiliário</strong> e <strong>Registro de Marca</strong>.
@@ -81,7 +83,7 @@
         </div>
       </div>
       <div class="col-lg-5 text-center">
-        <img src="assets/img/renata.jpg" alt="Renata Monte, advogada" class="avatar-photo mx-auto">
+        <img src="assets/img/renata.jpg" alt="Renata Monte, advogada" class="avatar-photo mx-auto" itemprop="image">
       </div>
     </div>
   </div>
@@ -94,9 +96,16 @@
       <div class="col-lg-9 text-center">
         <p class="eyebrow">Sobre</p>
         <h2 class="section-title mb-4">Compromisso, ética e proximidade em cada caso</h2>
-        <p class="fs-5">
-          Sou Renata Monte, advogada inscrita na <strong>OAB/SC nº 35.517</strong>, formada em Direito pela
-          <strong>Universidade do Sul de Santa Catarina (Unisul)</strong> em <strong>2011</strong>.
+        <p class="fs-5" itemprop="founder" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="jobTitle" content="Advogada">
+          Sou <span itemprop="name">Renata Monte</span>, advogada inscrita na
+          <strong itemprop="hasCredential" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+            <meta itemprop="credentialCategory" content="license">
+            <span itemprop="identifier">OAB/SC nº 35.517</span>
+          </strong>, formada em Direito pela
+          <strong itemprop="alumniOf" itemscope itemtype="https://schema.org/CollegeOrUniversity">
+            <span itemprop="name">Universidade do Sul de Santa Catarina (Unisul)</span>
+          </strong> em <strong>2011</strong>.
           Atuo com foco em <strong>Direito Imobiliário</strong> e <strong>Registro de Marca</strong>,
           oferecendo um atendimento próximo, humano e transparente para que cada cliente entenda cada etapa do seu processo.
         </p>
@@ -119,7 +128,7 @@
         <div class="card area-card h-100">
           <div class="card-body text-center">
             <i class="bi bi-house-door area-icon"></i>
-            <h3 class="h5 fw-bold mt-3">Direito Imobiliário</h3>
+            <h3 class="h5 fw-bold mt-3" itemprop="knowsAbout">Direito Imobiliário</h3>
             <p class="text-muted">
               Contratos de compra, venda e locação, due diligence imobiliária, regularização de imóveis
               e assessoria completa em transações patrimoniais.
@@ -131,7 +140,7 @@
         <div class="card area-card h-100">
           <div class="card-body text-center">
             <i class="bi bi-patch-check area-icon"></i>
-            <h3 class="h5 fw-bold mt-3">Registro de Marca</h3>
+            <h3 class="h5 fw-bold mt-3" itemprop="knowsAbout">Registro de Marca</h3>
             <p class="text-muted">
               Pesquisa de viabilidade, registro junto ao INPI, acompanhamento do processo e defesa da sua marca
               contra uso indevido por terceiros.
@@ -144,7 +153,7 @@
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="section-padding bg-soft">
+<section id="faq" class="section-padding bg-soft" itemscope itemtype="https://schema.org/FAQPage">
   <div class="container">
     <p class="eyebrow text-center">Dúvidas Frequentes</p>
     <h2 class="section-title text-center mb-5">Perguntas Frequentes</h2>
@@ -152,14 +161,14 @@
       <div class="col-lg-9">
         <div class="accordion" id="faqAccordion">
 
-          <div class="accordion-item">
+          <div class="accordion-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <h3 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" itemprop="name">
                 Preciso de advogado para comprar ou vender um imóvel?
               </button>
             </h3>
-            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div class="accordion-body" itemprop="text">
                 Embora não seja obrigatório em todos os casos, contar com assessoria jurídica evita riscos como
                 dívidas ocultas, irregularidades registrais e cláusulas contratuais desfavoráveis, garantindo
                 mais segurança em uma das maiores transações financeiras da vida.
@@ -167,14 +176,14 @@
             </div>
           </div>
 
-          <div class="accordion-item">
+          <div class="accordion-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" itemprop="name">
                 Quanto tempo demora o registro de uma marca no INPI?
               </button>
             </h3>
-            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div class="accordion-body" itemprop="text">
                 O prazo médio costuma variar entre 12 e 24 meses, dependendo da existência de exigências, oposições
                 de terceiros ou recursos ao longo do processo. Um acompanhamento jurídico atento ajuda a reduzir
                 atrasos e corrigir eventuais pendências rapidamente.
@@ -182,14 +191,14 @@
             </div>
           </div>
 
-          <div class="accordion-item">
+          <div class="accordion-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <h3 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" itemprop="name">
                 É possível registrar uma marca sem ter empresa aberta (CNPJ)?
               </button>
             </h3>
-            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+              <div class="accordion-body" itemprop="text">
                 Sim. Profissionais autônomos (pessoa física) também podem solicitar o registro de marca junto ao
                 INPI, desde que comprovem o exercício da atividade relacionada aos produtos ou serviços a serem
                 protegidos.
@@ -213,18 +222,18 @@
         <a href="https://wa.me/5548984122537?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="contact-card">
           <i class="bi bi-whatsapp"></i>
           <h3 class="h6 fw-bold mt-3 mb-1">WhatsApp</h3>
-          <p class="mb-0">(48) 98412-2537</p>
+          <p class="mb-0" itemprop="telephone">(48) 98412-2537</p>
         </a>
       </div>
       <div class="col-md-4">
         <a href="mailto:advogada@renatamonte.com.br" class="contact-card">
           <i class="bi bi-envelope"></i>
           <h3 class="h6 fw-bold mt-3 mb-1">E-mail</h3>
-          <p class="mb-0">advogada@renatamonte.com.br</p>
+          <p class="mb-0" itemprop="email">advogada@renatamonte.com.br</p>
         </a>
       </div>
       <div class="col-md-4">
-        <a href="https://www.instagram.com/renatamonte.adv/" target="_blank" rel="noopener" class="contact-card">
+        <a href="https://www.instagram.com/renatamonte.adv/" target="_blank" rel="noopener" class="contact-card" itemprop="sameAs">
           <i class="bi bi-instagram"></i>
           <h3 class="h6 fw-bold mt-3 mb-1">Instagram</h3>
           <p class="mb-0">@renatamonte.adv</p>

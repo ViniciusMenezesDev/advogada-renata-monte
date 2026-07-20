@@ -34,6 +34,7 @@ There is no lint/test/build tooling in this repo.
 - Practice areas are always mentioned in this order: **Direito Imobiliário** before **Registro de Marca** (applies to `<title>`, meta description/OG/Twitter tags, hero copy, "Sobre" copy, the Áreas de Atuação cards, FAQ order, and the footer line) — keep this order when adding or editing copy that lists both areas.
 - Social sharing preview image: Open Graph / Twitter Card tags in `index.html`'s `<head>` point to an **absolute URL** (`https://renatamonte.com.br/assets/img/renata.jpg`); update `og:image`/`twitter:image` together if the photo changes, and keep `og:image:width`/`og:image:height` in sync with the actual file dimensions.
 - Contact links are hardcoded in multiple places (navbar, hero, contact section, floating WhatsApp button, footer): WhatsApp `https://wa.me/5548984122537`, Instagram `https://www.instagram.com/renatamonte.adv/`, email `advogada@renatamonte.com.br`. Update all occurrences together if any of these change.
+- Structured data uses Schema.org **Microdata** (`itemscope`/`itemtype`/`itemprop` attributes inline on existing elements), not JSON-LD — this is a deliberate preference, keep new structured data in the same style. `<body>` is the root `Attorney` item; the "Sobre" paragraph nests a `Person` (`founder`) with `alumniOf`/`hasCredential`; the FAQ section is a separate top-level `FAQPage` item (`Question`/`Answer` per accordion item, `itemprop="text"` must match the visible answer text exactly).
 
 ## Deployment
 
